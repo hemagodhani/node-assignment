@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zone{
+            background-color: rgba(0, 0, 0, 0.682);
+            color: white;
+            font-size: 30px;
+            width: 400px;
+        }
+        #zone{
+            background-color: rgba(0, 0, 0, 0.682);
+            color: white;
+            font-size: 30px;
+            width: 400px;
+        }
+        .tz,.ok,.dt{
+            display: inline-block;
+            font-size: 30px;
+            background-color: bisque;
+            width: 400px;
+        }
+    </style>
+</head>
+
+
+<body onload="getzone()">
+
+        <div class="zone">
+            <select name="zone" id="zone" onchange="gettime(value)">
+                <option value=""></option>
+            </select>
+        </div>
+<br><br>
+        <div class="tz">
+            <label for="">TimeZone:</label>
+            <span id="tz" name="tz">......</span>
+        </div>
+
+        <div class="ok">
+            <label for="">Time:</label>
+            <span id="ok" name="ok">......</span>
+        </div>
+
+        <div class="dt">
+            <label for="">Date:</label>
+            <span id="dt" name="dt">......</span>
+        </div>
+
+    <script src="js/demo.js"></script>
+
+</body>
+
+</html>
